@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple House - Contact Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <link href="{% static 'css/all.min.css' %}" rel="stylesheet" />
+	<link href="{% static 'css/templatemo-style.css' %}" rel="stylesheet" />
+</head>
+<!--
+
+Simple House
+
+https://templatemo.com/tm-539-simple-house
+
+-->
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="{% static 'img/machine.jpg' %}">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title" >Avish Knitting Industries</h1>
+								<h6 class="tm-site-description">Warp Knitters</h6>
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="/" class="tm-nav-link">Home</a></li>
+
+								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link active">Contact</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Contact Page</h2>
+			</header>
+
+			<div class="tm-container-inner-2 tm-contact-section">
+				<div class="row">
+					<div class="col-md-6">
+
+						<figure class="tm-person">
+							<img src="{% static 'img/rajesh.jpg' %}" alt="Image" class="img-fluid-u tm-person-img" />
+							<figcaption class="tm-person-description">
+								<h4 class="tm-person-name" style = "color:green">Rajesh Khosla</h4>
+								<p class="tm-person-title" style = "color:grey">Owner</p>
+								<p style = "color:grey">Email ID : </p>
+								<p class="tm-person-about" ><a href="mailto:khosla79@rediff.com" style = "color:green"> khosla79@rediff.com</a><br>
+								Ph. No. :
+									<p class="tm-person-about"><a href="tel:+91 9814120279" style = "color:green"> 9814120279</a><br>
+									<a href="https://api.whatsapp.com/send?phone=+919814120279" style = "color:green">Send Message</a>
+
+								</p>
+
+							</figcaption>
+						</figure>
+
+					</div>
+
+
+
+					<div class="col-md-6">
+
+						<figure class="tm-person">
+							<img src="{% static 'img/avish.jpg' %}" alt="Image" class="img-fluid-u tm-person-img" />
+							<figcaption class="tm-person-description">
+								<h4 class="tm-person-name" style = "color:green">Avish Khosla</h4>
+								<p class="tm-person-title" style = "color:grey">Owner</p>
+								<p style = "color:grey">Email ID : </p>
+								<p class="tm-person-about" ><a href="mailto:avishrajesh@gmail.com" style = "color:green"> avishrajesh@gmail.com</a><br>
+								Ph. No. :
+									<p class="tm-person-about"><a href="tel:+91 9478793979" style = "color:green"> 9478793979</a><br>
+									<a href="https://api.whatsapp.com/send?phone=+919478793979" style = "color:green">Send Message</a>
+
+								</p>
+
+							</figcaption>
+						</figure>
+
+					</div>
+
+				</div>
+				<div class="col-md-6">
+						<div class="tm-address-box">
+							<h4 class="tm-info-title tm-text-success">Our Address</h4>
+							<address>
+								 Plot No. 5, Om shanti lane <br>
+								Pandori Warraich road <br>
+								Verka Majitha byepass<br>
+								Amritsar, Punjab<br>
+								143001
+							</address>
+
+
+						</div>
+					</div>
+			</div>
+            
+<!-- How to change your own map point
+	1. Go to Google Maps
+	2. Click on your location point
+	3. Click "Share" and choose "Embed map" tab
+	4. Copy only URL and paste it within the src="" field below
+-->
+			<div class="tm-container-inner-2 tm-map-section">
+				<div class="row">
+					<div class="col-12">
+						<div class="tm-map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d108664.10372160004!2d74.929917256609!3d31.667970118107487!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919631bc79efdb9%3A0x7a51a35b5cdc667f!2sShastri%20Nagar%2C%20Amritsar%2C%20Punjab%20143008!5e0!3m2!1sen!2sin!4v1614777729420!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<script src="{% static 'js/parallax.min.js' %}"></script>
+	<script>
+		$(document).ready(function(){
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+			
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var panel = this.nextElementSibling;
+			    if (panel.style.maxHeight) {
+			      panel.style.maxHeight = null;
+			    } else {
+			      panel.style.maxHeight = panel.scrollHeight + "px";
+			    }
+			  });
+			}	
+		});
+	</script>
+</body>
+</html>
